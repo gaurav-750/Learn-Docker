@@ -7,3 +7,9 @@ WORKDIR /app
 # *copy the application files into the base image:
 # they'll be copied in the /app folder
 COPY . . 
+
+# running commands:
+RUN npm install
+
+# *adding env variables:
+ENV API_URL=http://api.myapp.com/
