@@ -13,3 +13,9 @@ RUN npm install
 
 # *adding env variables:
 ENV API_URL=http://api.myapp.com/
+
+EXPOSE 3000
+
+# *creating a group and adding user to it
+RUN addgroup app && adduser -S -G app app
+USER app
