@@ -1,2 +1,1 @@
-# excluding the node modules folder while building image
 /node_modules
