@@ -8,6 +8,9 @@ FROM node:16.14.2-alpine3.15
 # after this, all instructions will be executed in the working dir:
 WORKDIR /app
 
+# this is for volumes
+RUN mkdir data
+
 # *effective caching:
 COPY package*.json .
 RUN npm install
